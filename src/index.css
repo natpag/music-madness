@@ -41,6 +41,18 @@ li {
   text-align: center;
 }
 
+.bandPageName {
+  color: orangered;
+  text-align: center;
+  padding: 1rem;
+}
+
 .albumInfo {
   padding: 3rem;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  padding-left: 7rem;
 }
