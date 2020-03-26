@@ -5,8 +5,10 @@ const CodeOrange = () => {
   return (
     <Band
       name="CODE ORANGE"
-      image="./images/Code-Orange.jpg"
-      latestAlbumInfo="UNDERNEATH // The band's most recent album was released in 2020.
+      bandImage="./images/Code-Orange.jpg"
+      albumTitle="Last Album: UNDERNEATH"
+      albumImage="./images/CodeOrangeUnderneath.jpg"
+      latestAlbumInfo="The band's most recent album was released in 2020.
        Underneath is the record Code Orange have been threatening to deliver since 
        they had the word “Kids” in their name. It foregrounds glitchy industrial touches 
        and synthesizes them with a chaotic, mathematical approach without sacrificing the 

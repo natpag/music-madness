@@ -4,7 +4,7 @@ import Description from '../components/Description'
 const HomePage = () => {
   return (
     <main class="mainPage">
-      <h1>WELCOME TO MUSIC MADNESS!</h1>
+      <h1 class="opening">WELCOME TO MUSIC MADNESS!</h1>
       <h2>Here are my top three heavy bands!</h2>
       <Description
         name="Code Orange"

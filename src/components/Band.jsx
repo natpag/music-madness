@@ -4,8 +4,12 @@ const Band = (props) => {
   return (
     <li>
       <h1 class="bandPageName">{props.name}</h1>
-      <img src={props.image} alt="" />
-      <p class="albumInfo">{props.latestAlbumInfo}</p>
+      <img class="bandImage" src={props.bandImage} alt="" />
+      <h2 class="albumTitle">{props.albumTitle}</h2>
+      <div class="albumSection">
+        <img class="albumImage" src={props.albumImage} />
+        <p class="albumInfo">{props.latestAlbumInfo}</p>
+      </div>
     </li>
   )
 }
