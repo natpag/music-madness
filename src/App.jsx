@@ -1,33 +1,35 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
+import CodeOrange from './pages/CodeOrange'
+import BlackSabbath from './pages/BlackSabbath'
+import TheChariot from './pages/TheChariot'
 import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
     <Router>
-      <header>
-        <h1>Welcome to my SPA</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Go Home</Link>
-            </li>
-            <li>
-              <Link to="/1">Page 1</Link>
-            </li>
-            <li>
-              <Link to="/2">Page 2</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Go Home</Link>
+          </li>
+          <li>
+            <Link to="/codeorange">CodeOrange</Link>
+          </li>
+          <li>
+            <Link to="/blacksabbath">BlackSabbath</Link>
+          </li>
+          <li>
+            <Link to="/thechariot">TheChariot</Link>
+          </li>
+        </ul>
+      </nav>
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/1" component={Page}></Route>
-        <Route exact path="/2" component={Page2}></Route>
+        <Route exact path="/codeorange" component={CodeOrange}></Route>
+        <Route exact path="/blacksabbath" component={BlackSabbath}></Route>
+        <Route exact path="/thechariot" component={TheChariot}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
